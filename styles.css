@@ -13,7 +13,7 @@ body{user-select:none;font-size:40pt;background-image:url("http://api.bzafx.com/
 #mydata-a{font-size:20pt;text-align:left;}
 .myapp{background:rgba(255,255,255,0.5);border-radius:10px;box-shadow:#000 0px 0px 0px 1px;padding:2%;margin:3%;}
 #myapp-a{font-size:30pt;margin-left:3%;}
-.app_name{font-size:30pt;text-decoration:none;padding-left:20%;}
+.app_name{font-size:30pt;text-decoration:none;}
 .app_icon{width:90px;height:90px;border-radius:100%;margin-top:40px;}
 .border_w_c{text-align:center;background:rgba(255,255,255,0.5);border-radius:10px;box-shadow:#000 0px 0px 0px 1px;padding:2%;margin:3%;}
 #audio_i{width:600px;}
