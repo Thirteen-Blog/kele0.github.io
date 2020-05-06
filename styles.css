@@ -2,7 +2,7 @@ body{user-select:none;font-size:40pt;background-image:url("http://api.bzafx.com/
 #headimg-div{width:100%;height:25%;text-align:center;}
 #headimg{width:20%;height:20%;border-radius:100%;margin-top:10%;}
 #breeze{color:#000;font-size:35pt;margin-top:10%;}
-#info{color:#000;font-size:20pt;margin-top:10%;text-align:center;background:rgba(255,255,255,0.5);padding:2%;margin:3%;border-radius:10px;box-shadow:#000 0px 0px 0px 1px;height:300px;}
+#info{color:#000;font-size:20pt;margin-top:10%;text-align:center;background:rgba(255,255,255,0.5);padding:2%;margin:3%;border-radius:10px;box-shadow:#000 0px 0px 0px 1px;}
 .codetype{font-size:30pt;text-decoration:underline;}
 #codea{color:#F06292;}
 #codeb{color:#009688;}
