@@ -10,10 +10,56 @@
 
 	<title>繁星-个人站</title>
 	
-
+        <meta name="Description" content="基于html5实现的网页底部用轻音乐播放器(html5+jQurey)为您的网站增加活力。这是一款显示底部的音乐插件，不是自动隐藏的一款音乐插件哦 这个比较适合新手用，很简单，在自己网站放点轻音乐等。html5扁平化网页播放器代码。这是一款相当简洁的基于jquery+html5实现的音乐播放器代码，html5扁平化网页播放器代码。1. 界面简洁但很精美；2. 支持回显歌曲播放时度及拖动播放；3. 支持调节音量；" />
+        <link rel="stylesheet" type="text/css" href="http://www.52player.cn/Demos/footerMusicPlayer/css/audio.css">
+	  
   </head>
 
   <body>
+	  
+	<div class="audio-box">
+		<div class="audio-container">
+			<div class="audio-view">
+				<div class="audio-cover" ></div>
+				<div class="audio-body">
+					<h3 class="audio-title">未知歌曲</h3>
+					<div class="audio-backs">
+						<div class="audio-this-time">00:00</div>
+						<div class="audio-count-time">00:00</div>
+						<div class="audio-setbacks">
+							<i class="audio-this-setbacks">
+								<span class="audio-backs-btn"></span>
+							</i>
+							<span class="audio-cache-setbacks">
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="audio-btn">
+					<div class="audio-select">
+						<div class="audio-prev"></div>
+						<div class="audio-play"></div>
+						<div class="audio-next"></div>
+						<div class="audio-menu"></div>
+						<div class="audio-volume"></div>
+					</div>
+					<div class="audio-set-volume">
+						<div class="volume-box">
+							<i><span></span></i>
+						</div>
+					</div>
+					<div class="audio-list">
+						<div class="audio-list-head">
+							<p>歌单</p>
+							<span class="menu-close">关闭</span>
+						</div>
+						<ul class="audio-inline">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	  
 	<div id="headimg-div">
 
@@ -32,7 +78,7 @@
 		
           <blink>QQ:3380962687</blink><br/>
 	
-          <figure"><audio autoplay="autoplay" loop="loop" controls src="https://music.163.com/song/media/outer/url?id=27961148.mp3"></audio><figcaption>点击播放-我的世界背景音乐-Alpha</figcaption></figure>
+          <!--<figure"><audio autoplay="autoplay" loop="loop" controls src="https://music.163.com/song/media/outer/url?id=27961148.mp3"></audio><figcaption>点击播放-我的世界背景音乐-Alpha</figcaption></figure>-->
 
 	  <br/>
 
@@ -92,5 +138,55 @@
 	  </div>
 
 	</body>
+<script type="text/javascript" src="http://www.52player.cn/Demos/footerMusicPlayer/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.52player.cn/Demos/footerMusicPlayer/js/audio.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	var song = [
+		{
+			'cover' : 'http://wl.heyui.cc/Upload/bb1c6b81d55ddac49423eaba55372ef9.png',
+			'src' : 'https://music.163.com/song/media/outer/url?id=27961148.mp3',
+			'title' : 'Alpha'
+		}
+	];
+
+	var audioFn = audioPlay({
+		song : song,
+		autoPlay : true
+		//是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
+	});
+
+	/* 向歌单中添加新曲目，第二个参数true为新增后立即播放该曲目，false则不播放 
+	audioFn.newSong({
+		'cover' : 'http://wl.heyui.cc/Upload/bb1c6b81d55ddac49423eaba55372ef9.png',
+		'src' : 'https://music.163.com/song/media/outer/url?id=27961148.mp3',
+		'title' : 'Alpha'
+	},false);
+	*/
+
+	/* 暂停播放 */
+	//audioFn.stopAudio();
+
+	/* 开启播放 */
+	//audioFn.playAudio();
+
+	/* 选择歌单中索引为3的曲目(索引是从0开始的)，第二个参数true立即播放该曲目，false则不播放 */
+	//audioFn.selectMenu(3,true);
+
+	/* 查看歌单中的曲目 */
+	//console.log(audioFn.song);
+
+	/* 当前播放曲目的对象 */
+	//console.log(audioFn.audio);
+});
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ecbff70bd46d40393c105bbc42edfcad";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 	
 </html>		
