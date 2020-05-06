@@ -17,6 +17,7 @@ body{user-select:none;font-size:40pt;background-image:url("http://api.bzafx.com/
 .app_icon{width:90px;height:90px;border-radius:100%;margin-top:40px;}
 .border_w_c{text-align:center;background:rgba(255,255,255,0.5);border-radius:10px;box-shadow:#000 0px 0px 0px 1px;padding:2%;margin:3%;}
 #audio_i{width:600px;}
+.ddd{height:100px}
 
 *{
 
