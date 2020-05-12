@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+	<meta charset="utf-8"/>	<meta name="viewport" content="user-scalable=0">
+	<title>繁星-个人站</title>
+  </head>
+  <body>  
+	<div id="headimg-div">
+	  <img src="https://q.qlogo.cn/headimg_dl?dst_uin=3380962687&spec=640" id="headimg"/>
+	  <h1 id="breeze">- 繁星 -</h1>
+	</div>
+	<div id="info">
+	  <h2>欢迎访问我的主页</h2>
+          <a id="codea" href="https://kele0.github.io/blog">我的博客(未完善)</a><br/>
+	  <blink>学生党，自学编程</blink><br/>
+          <blink>QQ:3380962687</blink><br/>
+          <!--<figure"><audio autoplay="autoplay" loop="loop" controls src="https://music.163.com/song/media/outer/url?id=27961148.mp3"></audio><figcaption>点击播放-我的世界背景音乐-Alpha</figcaption></figure>-->
+	  <br/>
+	  <a class="codetype" id="codea" href="https://baike.sm.cn/item/66ffcfe97b934665b197031c31609ba4.html?from=smsc&uc_param_str=dnntnwvepffrgibijbpr">iapp</a> <a class="nounderline">/</a>
+	  <a class="codetype" id="codeb" href="https://baike.baidu.com/item/HTML/97049">HTML</a> <a class="nounderline">/</a>
+	  <a class="codetype" id="codec" href="https://baike.sm.cn/item/8bd6cb56cd33a1f1426e8d67d67f510f.html?from=smsc&uc_param_str=dnntnwvepffrgibijbpr">PHP</a>
+	</div>
+	<br/>
+	<a id="myapp-a">我的作品:</a>
+	  <div class="myapp">
+		<div>
+		  <img src="https://kele0.github.io/help/icon.png" class="app_icon"/>   <a style="color:#EF6C00;" class="app_name" href="https://kele0.github.io/help">iapp助手</a>
+		   <hr/>
+		</div>
+	  </div>
+	  <br/>
+	  <a id="myapp-a">友情链接:</a>
+      <div class="myapp">
+            <hr>
+               <div id="info" onclick="window.location.href ='https://acutecool.github.io/'">
+                 <img src="http://q.qlogo.cn/g?b=qq&nk=2183315959&s=160" class="app_icon"><br>
+                 <a style="color:#EF6C00;" class="app_name" href="https://acutecool.github.io/">cool主页</a>
+               </div>
+               <hr>
+               <div id="info">
+                  <img src="http://q.qlogo.cn/g?b=qq&nk=1359256243&s=160" class="app_icon"><br>
+                  <a style="color:#EF6C00;" class="app_name" href="https://whitenight999.github.io">白夜主页</a>
+               </div>
+               <hr>
+               <div id="info">
+		          <img src="http://q.qlogo.cn/g?b=qq&nk=2199825963&s=160" class="app_icon"><br>
+                  <a style="color:#EF6C00;" class="app_name" href="https://jasontom123.github.io/">BREEZE</a>
+               </div>
+             <hr>
+       </div>
+	  <br/>
+	<a id="myapp-a">在线工具</a>
+	  <div class="myapp">
+		<div>
+		<img src="http://wl.heyui.cc/assets/icon.png"/> <a class="app_name" href="http://wl.heyui.cc" style="color:#008777;"><sup>极速外链</sup></a>
+		<hr/>
+		</div>
+	  </div>
+	  <div class="ddd"><div>
+	<div class="audio-box">
+		<div class="audio-container">
+			<div class="audio-view">
+				<div class="audio-cover" ></div>
+				<div class="audio-body">
+					<h3 class="audio-title">未知歌曲</h3>
+					<div class="audio-backs">
+						<div class="audio-this-time">00:00</div>
+						<div class="audio-count-time">00:00</div>
+						<div class="audio-setbacks">
+							<i class="audio-this-setbacks">
+								<span class="audio-backs-btn"></span>
+							</i>
+							<span class="audio-cache-setbacks">
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="audio-btn">
+					<div class="audio-select">
+						<div class="audio-prev"></div>
+						<div class="audio-play"></div>
+						<div class="audio-next"></div>
+						<div class="audio-menu"></div>
+					</div>
+					<div class="audio-list">
+						<div class="audio-list-head">
+							<p>歌单</p>
+							<span class="menu-close">关闭</span>
+						</div>
+						<ul class="audio-inline">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+            </div>
+	</body>
+<script type="text/javascript" src="http://www.52player.cn/Demos/footerMusicPlayer/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.52player.cn/Demos/footerMusicPlayer/js/audio.js"></script>
+<script type="text/javascript">
+$(function(){
+	var song = [
+		{
+			'cover' : 'http://wl.heyui.cc/Upload/bb1c6b81d55ddac49423eaba55372ef9.png',
+			'src' : 'https://music.163.com/song/media/outer/url?id=27961148.mp3',
+			'title' : 'Alpha'
+		}
+	];
+	var audioFn = audioPlay({
+		song : song,
+		autoPlay : true
+		//是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
+	});
+	/* 向歌单中添加新曲目，第二个参数true为新增后立即播放该曲目，false则不播放 
+	audioFn.newSong({
+		'cover' : 'http://wl.heyui.cc/Upload/bb1c6b81d55ddac49423eaba55372ef9.png',
+		'src' : 'https://music.163.com/song/media/outer/url?id=27961148.mp3',
+		'title' : 'Alpha'
+	},false);
+	*/
+	/* 暂停播放 */
+	//audioFn.stopAudio();
+	/* 开启播放 */
+	//audioFn.playAudio();
+	/* 选择歌单中索引为3的曲目(索引是从0开始的)，第二个参数true立即播放该曲目，false则不播放 */
+	//audioFn.selectMenu(3,true);
+	/* 查看歌单中的曲目 */
+	//console.log(audioFn.song);
+	/* 当前播放曲目的对象 */
+	//console.log(audioFn.audio);
+});
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9b3501126409ea6d5e53a047d9ec70d0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
